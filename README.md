@@ -84,7 +84,7 @@ volume and a save directory. See [Loading files interactively](#loading-files-in
 python napari_session.py \
     --input  semantic_mask.mrc \
     --semantic \
-    --raw    tomogram.mrc \
+    --raw    dataset.mrc \
     --output instances.mrc \
     --spacing_nm 5 5 20 \
     --napari
@@ -95,7 +95,7 @@ python napari_session.py \
 ```bash
 python napari_session.py \
     --input  labels_by_cell.mrc \
-    --raw    tomogram.mrc \
+    --raw    dataset.mrc \
     --output instances.mrc \
     --spacing_nm 5 5 20 \
     --napari
@@ -107,7 +107,7 @@ python napari_session.py \
 python napari_session.py \
     --load_instances instances_AUTO.mrc \
     --queue_csv      instances_review_queue.csv \
-    --raw            tomogram.mrc \
+    --raw            dataset.mrc \
     --output         instances_v2.mrc \
     --napari
 ```
