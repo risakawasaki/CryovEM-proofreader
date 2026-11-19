@@ -1,6 +1,6 @@
-# vem-proofreader
+# CryovEM-proofreader
 
-Semi-automated **instance segmentation and human proofreading** for volume EM (FIB-SEM / cryo-vEM) data.
+Semi-automated **instance segmentation and human proofreading** for cryogenic volume EM (FIB-SEM / cryo-vEM) data.
 
 The tool takes a binary semantic mask (or a per-cell label volume), turns it into *instances* — one integer id per object — flags the ones most likely to be wrong, and opens a [napari](https://napari.org) session where you fix them by hand. The corrected volume is written back out as MRC alongside a CSV recording which object belongs to which cell.
 
