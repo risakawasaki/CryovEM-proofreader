@@ -46,8 +46,8 @@ Fully automatic instance separation over-splits as often as it under-splits, and
 Python **3.10–3.12**. (napari does not yet support 3.13+; the non-UI parts of the pipeline run fine on any modern Python.)
 
 ```bash
-git clone https://github.com/<you>/vem-proofreader.git
-cd vem-proofreader
+git clone https://github.com/<you>/CryovEM-proofreader.git
+cd CryovEM-proofreader
 
 conda create -n vem python=3.11
 conda activate vem
