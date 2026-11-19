@@ -1,0 +1,26 @@
+# Core numerics / IO -- imported at module load.
+numpy
+pandas
+scipy
+scikit-image
+mrcfile
+
+# Napari proofreading UI (only needed for --napari; imported lazily).
+# napari is not compatible with Python 3.14 -- use Python 3.10-3.12.
+napari
+magicgui
+qtpy
+Pillow         # 600 dpi PNG + SVG screenshot export
+
+# Qt backend for qtpy/napari -- install exactly ONE. All four work with qtpy,
+# but the licences differ, which matters when this BSD-licensed project is
+# redistributed alongside one:
+#     PySide6 / PySide2   LGPL
+#     PyQt5   / PyQt6     GPL, or a paid commercial licence
+# PySide6 is listed here for that reason. If your napari version is happier on
+# PyQt5, swap this line -- nothing in this project depends on the backend.
+PySide6
+
+# Optional readers -- only needed for the matching input formats.
+tifffile       # .tif / .tiff stacks and directories
+nibabel        # .nii / .nii.gz
