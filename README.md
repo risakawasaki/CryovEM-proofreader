@@ -1,4 +1,4 @@
-# CryovEM-proofreader
+# Cryo-vEM proofreader
 
 Semi-automated **instance segmentation and human proofreading** for cryogenic volume EM (FIB-SEM / cryo-vEM) data.
 
